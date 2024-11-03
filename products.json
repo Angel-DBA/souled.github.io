@@ -1,0 +1,33 @@
+{
+  "hair": [
+      { "name": "Shampoo" },
+      { "name": "Conditioner" },
+      { "name": "hair oil" },
+      { "name": "Beard Oil" },
+      { "name": "Pre Shampoo" },
+      { "name": "Hair Serum" }
+  ],
+  "skin": [
+      { "name": "Face Wash" },
+      { "name": "Moisturizer" },
+      { "name": "body oil" },
+      { "name": "Body butta" },
+      { "name": "Sunscreen" },
+      { "name": "Sunscreen" },
+      { "name": "Sunscreen" },
+      { "name": "Sunscreen" },
+      { "name": "Sunscreen" },
+      { "name": "Sunscreen" },
+      { "name": "Sunscreen" }
+  ],
+  "accessories": [
+      { "name": "Hair Brush" },
+      { "name": "Sleep Mask" },
+      { "name": "accesories" },
+      { "name": "Notebooks" },
+      { "name": "Watches" },
+      { "name": "Sunglasses" },
+      { "name": "Crunches" },
+      { "name": "Clips" }
+  ]
+}
