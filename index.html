@@ -11,7 +11,14 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   </head>
   <body>
     <!-- Navbar -->
@@ -52,7 +59,7 @@
                 <p>Content goes here for the second cell.</p>
               </div>
               <div class="cell">
-                <h2>Accesories</h2>
+                <h2>Accessories</h2>
                 <p>Content goes here for the second cell.</p>
               </div>
             </div>
@@ -181,387 +188,101 @@
 
       
               
-              
+  
+     <!-- Section 2 MISSION-->
+     <div>
+      <div class="container">
+       <div class="cell">
+        <h2>YOUR HAIR AND SKIN DESERVE THE BEST.</h2>
+        
+         <p>
+           At souled, our mission is to create high-quality, ethically sourced hair and skin care products that empower individuals to feel confident, healthy, and beautiful. we believe that beauty should be nourishing, sustainable, and accessible for everyone. every product we make is designed with integrity, innovation, and care. we promise to continue seeking ways to improve, innovate, and support sustainable beauty that aligns with your values and enhances your well-being.
+         </p>
+         
+       </div>
+       <div class="cell">
+         <img src="hair16.jpg" alt="Description of image" width="100%" height="auto" />
+       </div>
+   </div>   
               
 
     <!-- Section 1 HERO -->
-    <div>
-      <h1>your skin and hair deserve nothing but the best.</h1>
-      <div class="container">
-        <div class="cell">
-          <img src="images\hair7.jpg" alt="Description of image" width="100%" height="auto" />
-        </div>
-        <div class="cell">
-          <img src="images\hair2 2.jpg" alt="Description of image" width="100%" height="auto" />
-        </div>
-        <div class="cell">
-          <img src="images\hair5.jpg" alt="Description of image" width="100%" height="auto" />
-        </div>
-    </div>  
-  </div>
-  
+      <div class="container swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
     
-     <!-- Section 2 MISSION-->
-      <div>
-     <div class="container">
-      <div class="cell">
-        <h2>OUR  MISSION</h2>
-        <p>
-          At souled, our mission is to create high-quality, ethically sourced hair and skin care products that empower individuals to feel confident, healthy, and beautiful. we believe that beauty should be nourishing, sustainable, and accessible for everyone. every product we make is designed with integrity, innovation, and care. we promise to continue seeking ways to improve, innovate, and support sustainable beauty that aligns with your values and enhances your well-being.
-        </p>
-        
-      </div>
-      <div class="cell">
-        <img src="images\hair16.jpg" alt="Description of image" width="100%" height="auto" />
-      </div>
-  </div>
-
-
-  
-      <!-- Section 3 PRODUCTS-->
-      <div class="container">
-        <div>
-          <div class="cell">
-        
-           <!-- Hair care Category -->
-       <!-- Hair care Category -->
-  <h2 onclick="toggleProductList('hairCareProducts')">Products</h2>
-  <div class="product-list" id="hairCareProducts">
-      <!-- Main Product (Visible by default) -->
-      <div class="product">
-          <img src="images/hair7.jpg" alt="Hair Product 1" />
-          <p>Hair Oil</p>
-          <p class="price">$12.00</p>
-          <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
-      </div>
-      <!-- HAIR CARE (Initially Hidden) -->
-      <div class="product hidden">
-          <img src="images/hair7.jpg" alt="Hair Product 2" />
-          <p>Body Butter</p>
-          <p class="price">$15.00</p>
-          <button class="add-to-cart" onclick="addToCart('Hair Product 2', 15)">Add to Cart</button>
-      </div>
-      <div class="product hidden">
-        <img src="images/hair7.jpg" alt="Hair Product 2" />
-        <p>Body Butter</p>
-        <p class="price">$15.00</p>
-        <button class="add-to-cart" onclick="addToCart('Hair Product 2', 15)">Add to Cart</button>
-    </div>
-    <div class="product hidden">
-      <img src="images/hair7.jpg" alt="Hair Product 2" />
-      <p>Body Butter</p>
-      <p class="price">$15.00</p>
-      <button class="add-to-cart" onclick="addToCart('Hair Product 2', 15)">Add to Cart</button>
-  </div>
-  <div class="product hidden">
-    <img src="images/hair7.jpg" alt="Hair Product 2" />
-    <p>Body Butter</p>
-    <p class="price">$15.00</p>
-    <button class="add-to-cart" onclick="addToCart('Hair Product 2', 15)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/hair7.jpg" alt="Hair Product 2" />
-  <p>Body Butter</p>
-  <p class="price">$15.00</p>
-  <button class="add-to-cart" onclick="addToCart('Hair Product 2', 15)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/hair7.jpg" alt="Hair Product 2" />
-  <p>Body Butter</p>
-  <p class="price">$15.00</p>
-  <button class="add-to-cart" onclick="addToCart('Hair Product 2', 15)">Add to Cart</button>
-</div>
-  <!-- SKIN CARE PRODUCTS... -->
-<div class="product hidden">
-  <img src="images/oil3.jpg" alt="Skin Product 3" />
-  <p>Shea Butter</p>
-  <p class="price">$18.00</p>
-  <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil3.jpg" alt="Skin Product 3" />
-  <p>Shea Butter</p>
-  <p class="price">$18.00</p>
-  <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil3.jpg" alt="Skin Product 3" />
-  <p>Shea Butter</p>
-  <p class="price">$18.00</p>
-  <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil3.jpg" alt="Skin Product 3" />
-  <p>Shea Butter</p>
-  <p class="price">$18.00</p>
-  <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil3.jpg" alt="Skin Product 3" />
-  <p>Shea Butter</p>
-  <p class="price">$18.00</p>
-  <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil3.jpg" alt="Skin Product 3" />
-  <p>Shea Butter</p>
-  <p class="price">$18.00</p>
-  <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-</div>
- <!-- ACCESORIES PRODUCTS... -->
- <div class="product hidden">
-  <img src="images/oil2.jpg" alt="Accessory 2" />
-  <p>Accessories</p>
-  <p class="price">$15.00</p>
-  <button class="add-to-cart" onclick="addToCart('Accessory 2', 15)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil2.jpg" alt="Accessory 2" />
-  <p>Accessories</p>
-  <p class="price">$15.00</p>
-  <button class="add-to-cart" onclick="addToCart('Accessory 2', 15)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil2.jpg" alt="Accessory 2" />
-  <p>Accessories</p>
-  <p class="price">$15.00</p>
-  <button class="add-to-cart" onclick="addToCart('Accessory 2', 15)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil2.jpg" alt="Accessory 2" />
-  <p>Accessories</p>
-  <p class="price">$15.00</p>
-  <button class="add-to-cart" onclick="addToCart('Accessory 2', 15)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil2.jpg" alt="Accessory 2" />
-  <p>Accessories</p>
-  <p class="price">$15.00</p>
-  <button class="add-to-cart" onclick="addToCart('Accessory 2', 15)">Add to Cart</button>
-</div>
-      <!-- Repeat for other products as needed... -->
-
-      <!-- "See All" Button -->
-      <button onclick="toggleProductList('productListId', this)">See All</button>
-      <div id="products" style="display: none;">
-          <!-- Product items here -->
-            <!-- Hair care Category -->
-      <div class="cell" id="hair">
-        <h2 onclick="toggleProductList('hairCareProducts')">Hair CARE</h2>
-        <div class="product-list" id="hairCareProducts">
-            <div class="product">
-                <img src="images/hair7.jpg" alt="Hair Product 1" />
-                <p>Hair Oil</p>
-                <p class="price">$12.00</p>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="hair5.jpg" alt="card-image" class="card-image" />
+                <p class="badge hair">Hair oil</p>
+                <h2 class="card-title">$12.00</h2>
                 <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-                <img src="images/hair7.jpg" alt="Hair Product 2" />
-                <p>Body Butter</p>
-                <p class="price">$15.00</p>
-                <button class="add-to-cart" onclick="addToCart('Hair Product 2', 15)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-                <img src="images/oil3.jpg" alt="Hair Product 3" />
-                <p>Shea Butter</p>
-                <p class="price">$18.00</p>
-                <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-              <img src="images/oil3.jpg" alt="Hair Product 3" />
-              <p>Shea Butter</p>
-              <p class="price">$18.00</p>
-              <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
-          </div>
-          <div class="product hidden">
-            <img src="images/oil3.jpg" alt="Hair Product 3" />
-            <p>Shea Butter</p>
-            <p class="price">$18.00</p>
-            <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
+               
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="hair5.jpg" alt="card-image" class="card-image" />
+                <p class="badge hand">Hair oil</p>
+                <h2 class="card-title">$12.00</h2>
+                <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
+               
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="hair5.jpg" alt="card-image" class="card-image" />
+                <p class="badge watch">Hair oil</p>
+                <h2 class="card-title">$12.00</h2>
+                <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
+                
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="hair5.jpg" alt="card-image" class="card-image" />
+                <p class="badge beauty">Hair oil</p>
+                <h2 class="card-title">$12.00</h2>
+                <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
+                
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="hair5.jpg" alt="card-image" class="card-image" />
+                <p class="badge design">Hair oil</p>
+                <h2 class="card-title">$12.00</h2>
+                <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
+               
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="hair5.jpg" alt="card-image" class="card-image" />
+                <p class="badge developer">Body Butter</p>
+                <h2 class="card-title">$12.00</h2>
+                <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
+                
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="hair5.jpg" alt="card-image" class="card-image" />
+                <p class="badge hand">Body oil</p>
+                <h2 class="card-title">$12.00</h2>
+                <button class="add-to-cart" onclick="addToCart('Hair Product 1', 12)">Add to Cart</button>
+               
+              </a>
+            </li>
+    
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
         </div>
-        <div class="product hidden">
-          <img src="images/oil3.jpg" alt="Hair Product 3" />
-          <p>Shea Butter</p>
-          <p class="price">$18.00</p>
-          <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
-      </div>
-      <div class="product hidden">
-        <img src="images/oil3.jpg" alt="Hair Product 3" />
-        <p>Shea Butter</p>
-        <p class="price">$18.00</p>
-        <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
-    </div>
-    <div class="product hidden">
-      <img src="images/oil3.jpg" alt="Hair Product 3" />
-      <p>Shea Butter</p>
-      <p class="price">$18.00</p>
-      <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
+      </div> 
   </div>
-  <div class="product hidden">
-    <img src="images/oil3.jpg" alt="Hair Product 3" />
-    <p>Shea Butter</p>
-    <p class="price">$18.00</p>
-    <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
-</div>
-<div class="product hidden">
-  <img src="images/oil3.jpg" alt="Hair Product 3" />
-  <p>Shea Butter</p>
-  <p class="price">$18.00</p>
-  <button class="add-to-cart" onclick="addToCart('Hair Product 3', 18)">Add to Cart</button>
-</div>
-        </div>
-    </div>
-
-    <!-- Skin care Category -->
-    <div class="cell" id="skin">
-        <h2 onclick="toggleProductList('skinCareProducts')">SKIN CARE</h2>
-        <div class="product-list" id="skinCareProducts">
-            <div class="product">
-                <img src="images/oil1.jpg" alt="Skin Product 1" />
-                <p>Body Oil</p>
-                <p class="price">$12.00</p>
-                <button class="add-to-cart" onclick="addToCart('Skin Product 1', 12)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-                <img src="images/oil2.jpg" alt="Skin Product 2" />
-                <p>Body Butter</p>
-                <p class="price">$15.00</p>
-                <button class="add-to-cart" onclick="addToCart('Skin Product 2', 15)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-                <img src="images/oil3.jpg" alt="Skin Product 3" />
-                <p>Shea Butter</p>
-                <p class="price">$18.00</p>
-                <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-              <img src="images/oil3.jpg" alt="Skin Product 3" />
-              <p>Shea Butter</p>
-              <p class="price">$18.00</p>
-              <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-          </div>
-          <div class="product hidden">
-            <img src="images/oil3.jpg" alt="Skin Product 3" />
-            <p>Shea Butter</p>
-            <p class="price">$18.00</p>
-            <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-        </div>
-        <div class="product hidden">
-          <img src="images/oil3.jpg" alt="Skin Product 3" />
-          <p>Shea Butter</p>
-          <p class="price">$18.00</p>
-          <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-      </div>
-      <div class="product hidden">
-        <img src="images/oil3.jpg" alt="Skin Product 3" />
-        <p>Shea Butter</p>
-        <p class="price">$18.00</p>
-        <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-    </div>
-    <div class="product hidden">
-      <img src="images/oil3.jpg" alt="Skin Product 3" />
-      <p>Shea Butter</p>
-      <p class="price">$18.00</p>
-      <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-  </div>
-  <div class="product hidden">
-    <img src="images/oil3.jpg" alt="Skin Product 3" />
-    <p>Shea Butter</p>
-    <p class="price">$18.00</p>
-    <button class="add-to-cart" onclick="addToCart('Skin Product 3', 18)">Add to Cart</button>
-</div>
-        </div>
-    </div>
-
-    <!-- Accessories Category -->
-    <div class="cell" id="accesories">
-        <h2 onclick="toggleProductList('accessoriesProducts')">Accessories</h2>
-        <div class="product-list" id="accessoriesProducts">
-            <div class="product">
-                <img src="images/5d1ad961a1b05b3da555003a94508394.jpg" alt="Accessory 1" />
-                <p>Accessories</p>
-                <p class="price">$12.00</p>
-                <button class="add-to-cart" onclick="addToCart('Accessory 1', 12)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-                <img src="images/oil2.jpg" alt="Accessory 2" />
-                <p>Accessories</p>
-                <p class="price">$15.00</p>
-                <button class="add-to-cart" onclick="addToCart('Accessory 2', 15)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-                <img src="images/oil3.jpg" alt="Accessory 3" />
-                <p>Accessory 3</p>
-                <p class="price">$18.00</p>
-                <button class="add-to-cart" onclick="addToCart('Accessory 3', 18)">Add to Cart</button>
-            </div>
-            <div class="product hidden">
-              <img src="images/oil3.jpg" alt="Accessory 3" />
-              <p>Accessory 3</p>
-              <p class="price">$18.00</p>
-              <button class="add-to-cart" onclick="addToCart('Accessory 3', 18)">Add to Cart</button>
-          </div>
-          <div class="product hidden">
-            <img src="images/oil3.jpg" alt="Accessory 3" />
-            <p>Accessory 3</p>
-            <p class="price">$18.00</p>
-            <button class="add-to-cart" onclick="addToCart('Accessory 3', 18)">Add to Cart</button>
-        </div>
-        <div class="product hidden">
-          <img src="images/oil3.jpg" alt="Accessory 3" />
-          <p>Accessory 3</p>
-          <p class="price">$18.00</p>
-          <button class="add-to-cart" onclick="addToCart('Accessory 3', 18)">Add to Cart</button>
-      </div>
-      <div class="product hidden">
-        <img src="images/oil3.jpg" alt="Accessory 3" />
-        <p>Accessory 3</p>
-        <p class="price">$18.00</p>
-        <button class="add-to-cart" onclick="addToCart('Accessory 3', 18)">Add to Cart</button>
-    </div>
-    <div class="product hidden">
-      <img src="images/oil3.jpg" alt="Accessory 3" />
-      <p>Accessory 3</p>
-      <p class="price">$18.00</p>
-      <button class="add-to-cart" onclick="addToCart('Accessory 3', 18)">Add to Cart</button>
-  </div>
-  <div class="product hidden">
-    <img src="images/oil3.jpg" alt="Accessory 3" />
-    <p>Accessory 3</p>
-    <p class="price">$18.00</p>
-    <button class="add-to-cart" onclick="addToCart('Accessory 3', 18)">Add to Cart</button>
-</div>
-</div>
-        </div>
-    </div>
-      </div>
-</div>
-</div>
-
-<!-- CSS to hide the additional products initially -->
-<style>
-  .hidden {
-      display: none;
-  }
-  .see-all {
-      margin-top: 10px;
-      background-color: #78fad1;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-  }
-</style>
-
-        <div class="cell">
-          <h2>SOULED PRODUCTS</h2>
-          <p>
-            OUR PRODUCTS ARE FORMULATED WITH CARE AND INTEGRITY, BLENDING SCIENCE WITH THE PUREST NATURAL INGREDIENTS TO REJUVENATE, PROTECT, AND NOURISH FROM THE INSIDE OUT.
-          </p>
-        </div>
-    </div>
-  </div>
+  
 
 
     <!-- Section 4 TESTIMONIES-->
@@ -867,6 +588,7 @@
     })
     .catch(error => console.error('Error loading JSON:', error));
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
