@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+*{
+    
+  margin: 0;
+  padding: O;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
 /* Basic styling */
 body {
     color: #333;
-    background-color: #fff; /* Mint Green */
+    background-color: #a9d1f0; 
     min-width: none;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     line-height: 20px;
@@ -12,39 +20,62 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    font-family: GT-America-Standard-Regular, HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-.container,.container1,.container2,.container3,.container4,.container5,.container6{
+.container,.container1,.container2,.container3,.container4,.container5,.container6,.container{
     display: flex;
     width: 100%;
-    max-width: 1200px; /* For desktop */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add padding for aesthetics */
+    max-width: 1200px; 
+    margin: 20px;
+    padding: 20px; 
     border-radius: 20px;
-    display: flex; /* Makes children elements flex items */
-    gap: 10px; /* Consistent gap between cells */
-    justify-content: space-around; /* Space cells equally */
+    display: flex;
+    gap: 10px;
+    justify-content: space-around; 
     flex-direction: row;
     flex-wrap: wrap;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    color: transparent;
 }
+.conta {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 20px 20px 10px whitesmoke;
+    animation: slider 5s linear infinite; 
+    z-index: 1;
+}
+
+@keyframes slider {
+    0% { background-image: url(hair5.jpg); }
+    30% { background-image: url(hair2.jpg); }
+    60% { background-image: url(hair7.jpg); }
+    100% { background-image: url(hair16.jpg); }
+}
+
 
 @media (max-width: 1024px) {
     .container,.container1,.container2,.container3,.container4,.container5,.container6 {
-        max-width: 100%; /* Full width for tablets */
+        max-width: 100%;
     }
 }
 
 @media (max-width: 767px) {
     .container,.container1,.container2,.container3,.container4,.container5,.container6 {
-        padding: 0 10px; /* Less padding for mobile */
+        padding: 0 10px; 
     }
 }
 .cell {
-    flex: 1 1 30%; /* Flex-grow, flex-shrink, and a fixed base width */
-    max-width: 600px; /* Ensures each cell doesn’t grow too large */
+    flex: 1 1 30%; 
+    max-width: 600px; 
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
@@ -75,16 +106,15 @@ img {
     background-color: #A2E2D4;
     color: #000;
 }
-
 .navbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Align items horizontally */
+    display: flex;
 }
 
 .navbar li {
-    position: relative; /* Needed for absolute positioning of dropdown */
+    position: relative;
 }
 
 .navbar li a {
@@ -94,51 +124,49 @@ img {
 }
 
 .dropdown-content {
-    display: flex; /* Use flex to align items in a row */
-    flex-direction: row; /* Align items in a row */
-    opacity: 0; /* Start with invisible dropdown */
-    transform: translateY(-10px); /* Initial position for effect */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition effect */
-    position: absolute; /* Position dropdown relative to the parent */
-    top: 100%; /* Position below the navbar item */
-    left: 0; /* Align with the left side of the parent */
-    background-color: #fff; /* Background for dropdown */
-    z-index: 1000; /* Ensure dropdown is above other content */
-    pointer-events: none; /* Prevent interactions when hidden */
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+    pointer-events: none;
 }
 
-/* Show dropdown when it has the active class */
 .dropdown-content.active {
-    opacity: 1; /* Make dropdown fully visible */
-    transform: translateY(0); /* Reset position for smooth transition */
-    pointer-events: auto; /* Enable pointer events when visible */
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .dropdown-content a {
     display: flex;
-    padding: 10px 16px; /* Spacing for dropdown items */
-    color: #000; /* Dropdown link color */
-    text-decoration: none; /* Remove underline */
+    padding: 10px 16px;
+    color: #000;
+    text-decoration: none;
 }
 
-/* Optional: Add hover effect for dropdown items */
 .dropdown-content a:hover {
-    background-color: #f0f0f0; /* Change background on hover */
+    background-color: #f0f0f0;
 }
 
-/* General link styles */
 .navbar a {
-    color: #000; /* Changed to black text for links */
-    text-decoration: none; /* Remove underline */
-    margin: 0 15px; /* Spacing between links */
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
 
 
   .icon {
-    position: relative; /* Position for the badge */
-    margin-left: 20px; /* Spacing from profile */
-}
+    position: relative; 
+    margin-left: 20px; 
+  }
+
 .cart-icon {
     background: none;
     border: none;
@@ -150,13 +178,13 @@ img {
 
 .cart-badge {
     position: absolute;
-    top: -5px; /* Position the badge */
-    right: -10px; /* Adjust right position */
-    background-color:#ff69b4; /* Badge color */
-    color: white; /* Badge text color */
-    border-radius: 50%; /* Circular badge */
-    padding: 2px 6px; /* Padding for badge */
-    font-size: 12px; /* Font size for badge */
+    top: -5px; 
+    right: -10px; 
+    background-color:#ff69b4; 
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px; 
+    font-size: 12px; 
 }
 .container {
     padding: 20px;
@@ -169,20 +197,20 @@ img {
     flex-direction: row;
   }
   .product {
-    margin-top: 10px;          /* Spacing between products */
+    margin-top: 10px;         
 }
   
   .product-list {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
+    flex-wrap: wrap; 
     gap: 15px;
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: flex-start; 
     flex-direction: row;
     margin-top: 10px;
   }
   
   .hidden {
-    display: none; /* Hide elements with this class */
+    display: none;
 }
 
   
@@ -205,109 +233,102 @@ img {
   }
   
   
-/* Remove border for the last item */
+
 .dropdown-item:last-child {
     border-bottom: none;
 }
 
-/* Hover effect for dropdown items */
+
 .dropdown-item:hover {
-    background-color: #f0f0f0; /* Change background on hover */
+    background-color: #f0f0f0;
 }
-/* Hover effects */
+
 .navbar li:hover .dropdown-content {
-    display: flex; /* Use flex to show dropdown */
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Move to original position */
+    display: flex; 
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
-    color: #333; /* Change color as needed */
+    color: #333; 
 }
 .profile-dropdown {
-    position: relative; /* Position relative for absolute dropdown */
+    position: relative; 
 }
-
 .profile-dropdown .dropdown-content {
-    display: none; /* Initially hidden */
+    display: none;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    width: 200px; /* Fixed width for the dropdown */
-    left: 0; /* Align the dropdown to the left */
-    top: 100%; /* Position it below the dropdown title */
+    width: 200px;
+    left: 0;
+    top: 100%;
     position: relative;
 }
 
 .profile-dropdown .dropdown-item {
-    height: 50px; /* Fixed height for each dropdown item */
-    display: flex; /* Enable flexbox for item alignment */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-    color: #333; /* Text color */
-    border-bottom: 1px solid #ddd; /* Optional: add a border between items */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #ddd;
     position: relative;
 }
 
 .profile-dropdown .dropdown-item:last-child {
-    border-bottom: none; /* Remove border for the last item */
+    border-bottom: none;
 }
 
 .profile-dropdown .dropdown-item:hover {
-    background-color: #f0f0f0; /* Change background on hover */
+    background-color: #f0f0f0;
 }
 
 .profile-dropdown:hover .dropdown-content {
-    display: flex; /* Use flexbox to show items */
-    flex-direction: column; /* Align items in a column */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 h2 {
     font-size: 0.5rem;
-    margin: 0; /* Remove default margin */
-    padding: 20px 0; /* Add padding for spacing above and below the heading */
-    text-align: start; /* Center align the heading */
-    color: #333; /* Text color */
+    margin: 0;
+    padding: 20px 0;
+    text-align: start;
+    color: #333;
 }
-
-/* Container styling to enable flex layout */
-
 
 .dropdown-title {
-    position: relative; /* Position relative for pseudo-element */
-    text-decoration: none; /* Remove default underline */
+    position: relative;
+    text-decoration: none;
 }
 
-/* Underline effect */
 .dropdown-title.active::after {
-    content: ''; /* Create an empty pseudo-element */
-    display: block; /* Make it block to take full width */
-    width: 100%; /* Full width */
-    height: 2px; /* Height of the underline */
-    background-color: #333; /* Color of the underline */
-    position: absolute; /* Position it absolutely */
-    left: 0; /* Align to the left */
-    bottom: -5px; /* Space below the text */
-    transition: width 0.3s ease; /* Smooth transition */
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
 }
 
-
-/* Optional: Add a hover effect on links */
 .dropdown-content a:hover {
-    background-color: #f1f1f1; /* Change background on hover */
+    background-color: #f1f1f1;
 }
 
 .payment-icon {
-    width: 30px; /* Set a fixed width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between icons and text */
-    vertical-align: middle; /* Align icon vertically with text */
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-/* Style for the search form */
 .search form {
     display: flex;
     align-items: center;
@@ -335,198 +356,189 @@ h2 {
     color: #666;
   }
 
-  /* Hide the search input by default */
 #searchInput {
-    display: none; /* Initially hidden */
+    display: none; 
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 5px;
-    margin-left: 5px; /* Adds a little space between the icon and the input */
-    outline: none; /* Remove default outline */
+    margin-left: 5px; 
+    outline: none; 
   }
   
-  /* When the search input is visible, you might want to set its width */
   #searchInput.visible {
-    display: block; /* Show when toggled */
+    display: block; 
   }
   
   
-  /* Adjust navbar-right for better alignment */
+
   .navbar-right {
     display: flex;
-    gap: 15px; /* Space between search and profile */
+    gap: 15px; 
     align-items: center;
   }
   
 
-/* Cell styling */
-.cell {
-    flex: 1;                       /* Each cell takes equal width */
-    flex-basis: 0;                 /* Equal width for all cells */
+  .cell {
+    flex: 1;
+    flex-basis: 0;
     border-radius: 6%;
-    min-height: 200px;             /* Set a consistent minimum height */
-    padding: 40px;                 /* Padding inside each cell */
-    background-color: #fff;        /* Background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    text-align: center;            /* Center text */
-    display: flex;                 /* Allows centering of inner content */
-    flex-direction: column;        /* Align content vertically */
-    justify-content: center;       /* Center content vertically */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    min-height: 200px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-/* Optional: Remove left and right margin from the first and last cells */
 .cell:first-child {
-    margin-left: 0;                /* No left margin for first cell */
+    margin-left: 0;
 }
 
 .cell:last-child {
-    margin-right: 0;               /* No right margin for last cell */
+    margin-right: 0;
 }
 
-
-/* Styling for the links under each cell */
 .cell-link {
     display: inline-block;
     margin-top: 10px;
-    color: #000;                   /* Link color */
-    text-decoration: none;          /* Remove underline */
+    color: #000;
+    text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
-    background-color: #78fad1;         /* Background color for link button */
+    background-color: #78fad1;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 .cell-link:hover {
-    background-color: #78fad1;         /* Darker color on hover */
-    color: #000;                    /* Change text color on hover */
+    background-color: #78fad1;
+    color: #000;
 }
 
-/* Styling for the buttons under each cell */
 .cell-button {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
     font-size: 16px;
-    color: #000;                       /* Text color */
-    background-color: #ff69b4;          /* Background color for button */
-    border: none;                     /* Remove border */
-    border-radius: 4px;               /* Rounded corners */
-    cursor: pointer;                   /* Change cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth color change on hover */
+    color: #000;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .cell-button:hover {
-    background-color: #78fad1;           /* Darker color on hover */
+    background-color: #78fad1;
 }
+
 .cell:hover {
-    transform: scale(1.02);      /* Slightly scale up the cell */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    margin-bottom: 20px; /* Space below the heading */
-    font-size: 24px; /* Larger font size for the heading */
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .contact-form {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack form elements vertically */
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    margin-top: 10px; /* Space between label and input */
-    font-weight: bold; /* Bold labels */
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 input, 
 textarea {
-    padding: 10px; /* Padding for input fields */
-    margin-bottom: 15px; /* Space between fields */
-    border: 1px solid #000; /* Border color */
-    border-radius: 40px; /* Increased border radius */
-    font-size: 16px; /* Font size */
-    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth border and transform transition */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 input:focus, 
 textarea:focus {
-    border-color: #78fad1; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+    border-color: #78fad1;
+    outline: none;
 }
 
 input:hover, 
 textarea:hover {
-    transform: scale(1.02); /* Slightly scale on hover */
+    transform: scale(1.02);
 }
 
 button {
-    background-color: #ff69b4; /* Light Lavender */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 80px; /* Match input border radius */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #78fad1; /* Darker background on hover */
-    transform: scale(1.05); /* Slightly scale button on hover */
+    background-color: #78fad1;
+    transform: scale(1.05);
 }
 
-
 .cell {
-    background-color: #fff; /* White background for the cell */
-    padding: 20px; /* Padding around the cell */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 10px; /* Space between cells */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .shop-button {
-    background-color: #ff69b4; /* Light Lavender *//* Background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .shop-button:hover {
-    background-color: #66d1b6; /* Darker shade on hover */
+    background-color: #66d1b6;
 }
 .cell-button {
-    background-color: #ff69b4; /* Light Lavender *//* Background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .cell-button:hover {
-    background-color: #66d1b6; /* Darker shade on hover */
+    background-color: #66d1b6;
 }
 .heading-button {
-    background-color: #66d1b6;; /* Light Lavender *//* Background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #66d1b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .heading-button:hover {
@@ -539,13 +551,14 @@ h1, h2, p {
     padding: 0;
 }
 .cell p {
-    font-size: 1em;          /* Set font size as needed */
-    margin: 0;               /* Remove default margins */
-    padding: 10px;           /* Add padding within the cell if needed */
-    overflow-wrap: break-word; /* Ensure long words wrap within the cell */
-    text-align: justify;     /* Align text for a neat fit */
-    line-height: 1.5;        /* Adjust line height for readability */
+    font-size: 1em;
+    margin: 0;
+    padding: 10px;
+    overflow-wrap: break-word;
+    text-align: justify;
+    line-height: 1.5;
 }
+
 
 /* Animated h1 */
 h1 {
@@ -571,7 +584,7 @@ h1 {
 /* Animated color gradient h2 */
 h2 {
     font-size: 1em;
-    color: black; /* Set text color to black */
+    color: black; 
     text-align: center;
     margin-bottom: 20px;
     animation: gradientShift 5s infinite linear;
@@ -591,7 +604,7 @@ h2:hover {
 
 h1 {
     font-size: 2em;
-    color: #000; /* Set text color to black */
+    color: #000; 
     text-align: center;
     margin-bottom: 20px;
     animation: gradientShift 5s infinite linear;
@@ -603,16 +616,13 @@ h1 {
 h1:hover {
     color: #000;
     transform: scale(1.05);
-}
-/* Subtle scale effect on p hover */
-p {
+}p {
     font-size: 1.1em;
     text-transform: lowercase;
     color: #555;
     transition: transform 0.3s ease, color 0.3s ease;
     text-align: justify;
     line-height: 1.6;
-    
 }
 
 p:hover {
@@ -623,9 +633,10 @@ p:hover {
 .underlined-text {
     text-decoration: underline;
 }
+
 .underline-container {
     position: relative;
-    display: inline-block; /* Ensures the underline respects container width */
+    display: inline-block;
 }
 
 .underline-container::before {
@@ -633,111 +644,111 @@ p:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Stretches underline across the container */
-    height: 2px; /* Adjust for desired thickness */
-    background-color: black; /* Color for the underline */
+    width: 100%;
+    height: 2px;
+    background-color: black;
 }
 
 .footer {
-    background-color: #fff; /* Dark background */
-    color: #000; /* White text */
-    padding: 40px 30px; /* Padding around the footer */
-    text-align: left; /* Align text to the left */
-  }
-  
-  .footer-content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space out content */
-    align-items: flex-start; /* Align items at the start */
-  }
-  
-  .footer-logo {
-    display: flex; /* Flex for logo alignment */
-    align-items: center; /* Center items vertically */
-  }
-  
-  .footer-logo img {
-    margin-right: 10px; /* Space between logo and name */
-  }
-  
-  .footer-sections {
-    display: flex; /* Flex layout for sections */
-    gap: 50px; /* Space between sections */
-  }
-  
-  .footer-section {
-    flex: 1; /* Allow sections to grow equally */
-  }
-  
-  .footer-section h4 {
-    margin-bottom: 10px; /* Space below heading */
-    font-size: 18px; /* Font size for headings */
-  }
-  
-  .footer-section a {
-    color: #000; /* White links */
-    text-decoration: none; /* Remove underline */
-    margin-bottom: 8px; /* Space below links */
-    display: block; /* Make links block level */
-    transition: color 0.3s ease; /* Smooth transition */
-  }
-  
-  .footer-section a:hover {
-    color: #78fad1; /* Change color on hover */
-  }
+    background-color: #fff;
+    color: #000;
+    padding: 40px 30px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    margin-right: 10px;
+}
+
+.footer-sections {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section a {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #78fad1;
+}
+
   
   .subscribe-section {
-    text-align: center; /* Center the subscribe section */
+    text-align: center; 
   }
   
   .subscribe-section input[type="email"] {
-    padding: 8px; /* Padding for email input */
-    margin-top: 8px; /* Space above input */
-    width: 100%; /* Full width */
-    max-width: 200px; /* Max width */
-    border-radius: 4px; /* Rounded corners */
-    border: 1px solid #000; /* White border */
-  }
+    padding: 8px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
   
   .subscribe-section button {
-    padding: 8px 12px; /* Button padding */
-    margin-top: 8px; /* Space above button */
-    color: #000; /* White text */
-    background-color: #ff69b4; /* Light Lavender */
-    ; /* Bright background */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s ease; /* Transition */
+    padding: 8px 12px; 
+    margin-top: 8px; 
+    color: #000; 
+    background-color: #ff69b4;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
   }
   
   .subscribe-section button:hover {
-    background-color: #78fad1; /* Change background on hover */
+    background-color: #78fad1; 
   }
   
   .footer-bottom {
-    margin-top: 20px; /* Space above the bottom section */
-    text-align: center; /* Center text */
+    margin-top: 20px; 
+    text-align: center; 
   }
   
   .social-icons {
-    display: flex; /* Flex layout for icons */
-    justify-content: center; /* Center icons */
-    gap: 15px; /* Space between icons */
-    margin-top: 10px; /* Space above icons */
+    display: flex; 
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 
   }
   
   .social-icons a {
-    font-size: 24px; /* Icon size */
-    color: #000; /* Icon color */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transition */
+    font-size: 24px;
+    color: #000; 
+    transition: color 0.3s ease, transform 0.3s ease; 
   }
   
-  .social-icons a:hover {
-    color: #ff69b4; /* Change color on hover */
-    transform: scale(1.2); /* Scale up on hover */
-  }
-  :root {
+  .social-icons a:hover{
+    color: #ff69b4; 
+    transform: scale(1.2); 
+    :root {
     --dark: #78fad1;
     --light: #ffffff;
     --success: #0abf30;
@@ -746,3 +757,128 @@ p:hover {
     --info: #3498db;
     --random: #eb43ff;
 }  
+
+/* PRODUCT SWIPING STYLING */
+
+.card-wrapper{
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+
+.card-list .card-item {
+  list-style: none;
+}
+.card-list .card-item .card-link{
+  user-select: none;
+  display: block;
+  background-color:#fff ;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+  cursor: grabbing;
+
+}
+
+.card-list .card-item .card-link:hover{
+border-color: #5372f0;
+}
+
+
+.card-list .card-link .card-image{
+width: 100%;
+aspect-ratio: 16/9;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+  color: #5372f0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+
+}
+
+.card-list .card-link .badge.hair{
+  color: #b22485;
+  background: #f7dff5;
+}
+.card-list .card-link .badge.watch{
+  color: #b25a2b;
+  background: #ffe3d2;
+}
+.card-list .card-link .badge.hand{
+  color: #205c20;
+  background: #d6f8d6;
+}
+.card-list .card-link .badge.beauty{
+  color: #856404;
+  background: #fff3dc;
+}
+.card-list .card-link .badge.developer{
+  color: #b22485;
+  background: #f7dff5;
+}
+.card-list .card-link .badge.design{
+  color: #3a1530;
+  background: #f7dff5;
+}
+
+.card-list .card-link .card-title{
+  font-size: 1.19rem;
+  color: black;
+  font-weight: 600;
+}
+.card-list .card-link .card-button{
+  height: 35px;
+  width: 35px;
+  color: #5372f0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372f0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+  color: #fff;
+  background: #5372f0;
+}
+.card-wrapper .swiper-pagination-bullet{
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372f0;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+  opacity:1 ;
+}
+
+.card-wrapper .swiper-slide-button{
+ color: #5372f0; 
+ margin-top: -35px;
+}
+
+@media  screen and (max-width:768px) {
+  .card-wrapper{
+    margin:0 10px 25px
+  }
+  .card-wrapper .swiper-slide-button{
+    display: none;
+  }
+}}
